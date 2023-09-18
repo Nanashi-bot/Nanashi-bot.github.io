@@ -1,2 +1,2 @@
 Visit my website!
-\n https://nanashi-bot.github.io/
+https://nanashi-bot.github.io/
