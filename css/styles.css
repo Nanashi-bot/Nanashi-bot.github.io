@@ -105,20 +105,70 @@ section {
         font-size: 1.2rem; /* Adjust font size for smaller screens */
     }
 }
+/*For section 3 Qualifications section */
 
 #section3 {
-    background-color: #97acba;
-    color: black;
+  background-color: #95a2ab;
+  color: black;
+  padding: 15rem;
+}
+
+.title {
+  width: 100%; /* Ensures the title spans the full width */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.left-side {
+  width: 45%;
+}
+
+.right-side {
+  width: 50%;
 }
 
 
+.left-side img, .right-side img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 0px; /* Adjust the size as needed */
+  height: auto;
+  margin-left: 0px;
+}
+
+.education-title, .skills-title {
+  text-align: left;
+  padding-bottom: 3rem;
+  padding-left: 9wh;
+  font-size: 3rem;
+}
+
+
+.education-detail, .skills-detail {
+  padding-left: 0px; /* Adjust padding as needed */
+  text-align: left;
+  font-size: 2rem;
+}
+
+.qualifications-title {
+  font-size: 5.5rem;
+  padding-left: 10px; /* Adds a bit of left padding */
+  margin-top: -3rem; /* Moves "Qualifications" higher */
+  padding-bottom: 20rem; /* Adds more space beneath "Qualifications" */
+  text-align: left;
+  padding-left: 3rem;
+}
 
 /* Section 4: Project Experience layout */
 #section4 {
     text-align: center; /* Center align the heading */
     padding: 20px; /* General padding for the section */
-    background-color: #ffffff; /* Background color */
-    min-height: 100vh;
+    background-color: white; /* Background color */
+    min-height: 90vh;
 }
 
 .main-title {
@@ -163,7 +213,40 @@ section {
     text-decoration: underline; /* Underline on hover */
 }
 
+/* Section 5 contact me section */
+
 #section5 {
-  background-color: #967168;
+  display: flex;
+  background-color: #b3aa9f;
+  padding: 20px;
   color: black;
+  max-height: 90vh;
 }
+
+.left-side {
+  width: 50%; /* Adjust as needed */
+}
+
+.right-side {
+  width: 50%; /* Adjust as needed */
+  padding-left: 20px; /* Add padding to separate from the image */
+}
+
+.contact-image {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.get-in-touch-title {
+  font-size: 5rem; /* Adjust font size as needed */
+  margin-bottom: 3rem; /* Space below the title */
+  text-align: left;
+}
+
+.get-in-touch-info {
+  font-size: 2rem;
+  text-align: left;
+  padding-right: 20rem;
+}
+
+
