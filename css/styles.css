@@ -1,9 +1,9 @@
 /* Custom Font */
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('./fonts/YourFontFile.woff2') format('woff2'),
-         url('./fonts/YourFontFile.woff') format('woff'),
-         url('./fonts/YourFontFile.ttf') format('truetype');
+    font-family: 'YDGoth';
+    src: url('css/fonts/YDGothic\ 140\ Pro.woff2') format('woff2'),
+         url('css/fonts/YDGothic 140 Pro.woff') format('woff'),
+         url('./fonts/YDGothic 140 Pro.ttf.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,30 +17,38 @@
 
 /* Global styles */
 body {
-    font-family: 'MyCustomFont', sans-serif; /* Use the custom font */
+    font-family: 'YDGoth', sans-serif; /* Use the custom font */
 }
 
 
 /* Section styling */
 section {
-    height: 100vh; /* Full viewport height for each section */
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
-    color: white; /* White text for contrast */
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
 }
 
 /* Section-specific styles */
 #section1 {
-    background-color: #222; /* Dark gray background */
+    background-color: rgb(232, 230, 230);
+    color: black;
 }
 
-#section1 h1 {
-    font-size: 4rem; /* Larger font for the name */
+.name {
+  font-size: 4rem;
 }
+
+.text {
+  font-size: 1rem;
+  text-align: center;
+  padding-left: 25rem;
+  padding-right: 25rem;
+}
+
 
 #section5 {
     background-color: #ccc; /* Lightest gray background */
@@ -63,6 +71,7 @@ section {
     width: 80%; /* Set the width of the content */
     height: 100%; /* Fill the entire height of the section */
     text-align: left; /* Left justify text */
+    font-size: 0.5rem;
 }
 
 .left, .right {
@@ -71,24 +80,19 @@ section {
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start; /* Align items to start at the top */
     padding: 20px; /* Optional padding for better spacing */
-}
-
-.left h2 {
-    font-size: 6rem; /* Increase font size for "Hello there!" */
-    color: grey; /* Grey text for "Hello there!" */
-    letter-spacing: -0.05em; /* Decrease letter spacing */
-    word-spacing: -0.05em; /* Decrease word spacing */
-    margin: 0; /* Remove margin to align with the left text */
+    font-size: 3rem;
+    color: #95a2ab;
 }
 
 /* Scoped styles for Section 2 paragraphs */
 #section2 .right p {
-    font-size: 3rem; /* Increase font size for the paragraph */
-    max-width: 90%; /* Keep the paragraph narrower for better readability */
-    line-height: 1.7; /* Better line spacing */
+    font-size: 1.9rem; /* Increase font size for the paragraph */
+    /*max-width: 90%; /* Keep the paragraph narrower for better readability */
+    /*line-height: 1.7; /* Better line spacing */
     color: white; /* White text for the right side */
-    letter-spacing: -0.03em; /* Decrease letter spacing */
-    word-spacing: -0.03em; /* Decrease word spacing */
+    padding-right: 9rem;
+    /*letter-spacing: -0.03em; /* Decrease letter spacing */
+    /*word-spacing: -0.03em; /* Decrease word spacing */
 }
 
 /* Optional: Media Queries for Smaller Screens */
@@ -108,7 +112,7 @@ section {
 /*For section 3 Qualifications section */
 
 #section3 {
-  background-color: #95a2ab;
+  background-color: rgb(164, 180, 191);;
   color: black;
   padding: 15rem;
 }
@@ -142,47 +146,45 @@ section {
 
 .education-title, .skills-title {
   text-align: left;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   padding-left: 9wh;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 
 .education-detail, .skills-detail {
-  padding-left: 0px; /* Adjust padding as needed */
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .qualifications-title {
-  font-size: 5.5rem;
-  padding-left: 10px; /* Adds a bit of left padding */
-  margin-top: -3rem; /* Moves "Qualifications" higher */
-  padding-bottom: 20rem; /* Adds more space beneath "Qualifications" */
+  font-size: 3rem;
+  padding-bottom: 4rem; /* Adds more space beneath "Qualifications" */
   text-align: left;
-  padding-left: 3rem;
 }
 
 /* Section 4: Project Experience layout */
 #section4 {
     text-align: center; /* Center align the heading */
     padding: 20px; /* General padding for the section */
-    background-color: white; /* Background color */
-    min-height: 90vh;
+    background-color: rgb(232, 230, 230);
+    min-height: 80vh;
 }
 
 .main-title {
-    font-size: 5rem; /* Increase the font size for the Project Experience heading */
+    font-size: 2.5rem; /* Increase the font size for the Project Experience heading */
     margin: 0; /* Remove any default margin */
     color: #000; /* Change the text color to black */
     padding-top: 5vh; /* Add padding above the title */
-    padding-bottom: 30vh; /* Add padding below the title */
+    padding-bottom: 15vh; /* Add padding below the title */
 }
 
 .projects-container {
     display: flex; /* Use flexbox for layout */
     justify-content: space-around; /* Space between project sections */
     flex-wrap: wrap; /* Wrap if there is not enough space */
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .project {
@@ -198,7 +200,7 @@ section {
 }
 
 .project-name {
-    font-size: 2rem; /* Font size for project names */
+    font-size: 1.3rem; /* Font size for project names */
     margin-bottom: 5px; /* Space below project names */
     color: #000;
 }
@@ -217,7 +219,7 @@ section {
 
 #section5 {
   display: flex;
-  background-color: #b3aa9f;
+  background-color: rgb(180, 169, 154);;
   padding: 20px;
   color: black;
   max-height: 90vh;
@@ -238,15 +240,15 @@ section {
 }
 
 .get-in-touch-title {
-  font-size: 5rem; /* Adjust font size as needed */
-  margin-bottom: 3rem; /* Space below the title */
+  font-size: 3rem; /* Adjust font size as needed */
+  margin-bottom: 2rem; /* Space below the title */
   text-align: left;
 }
 
 .get-in-touch-info {
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-align: left;
-  padding-right: 20rem;
+  padding-right: 15rem;
 }
 
 
