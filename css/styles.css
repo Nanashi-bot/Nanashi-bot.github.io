@@ -1,0 +1,169 @@
+/* Custom Font */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./fonts/YourFontFile.woff2') format('woff2'),
+         url('./fonts/YourFontFile.woff') format('woff'),
+         url('./fonts/YourFontFile.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'MyCustomFont', sans-serif; /* Use the custom font */
+}
+
+
+/* Section styling */
+section {
+    height: 100vh; /* Full viewport height for each section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white; /* White text for contrast */
+    font-size: 1.5rem;
+}
+
+/* Section-specific styles */
+#section1 {
+    background-color: #222; /* Dark gray background */
+}
+
+#section1 h1 {
+    font-size: 4rem; /* Larger font for the name */
+}
+
+#section5 {
+    background-color: #ccc; /* Lightest gray background */
+}
+
+/* h2 should be 6rem size and p should be 3rem and top padding should be 25vh*/
+
+/* Section 2: Split layout with increased font sizes and color adjustments */
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Align items to stretch, making columns equal height */
+    background-color: #000; /* Black background */
+    color: white; /* Default text color for the section */
+    padding-top: 25vh; /* Use viewport height for responsive top padding */
+}
+
+.split-container {
+    display: flex;
+    width: 80%; /* Set the width of the content */
+    height: 100%; /* Fill the entire height of the section */
+    text-align: left; /* Left justify text */
+}
+
+.left, .right {
+    flex: 1; /* Each side takes up 50% of the container */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to start at the top */
+    padding: 20px; /* Optional padding for better spacing */
+}
+
+.left h2 {
+    font-size: 6rem; /* Increase font size for "Hello there!" */
+    color: grey; /* Grey text for "Hello there!" */
+    letter-spacing: -0.05em; /* Decrease letter spacing */
+    word-spacing: -0.05em; /* Decrease word spacing */
+    margin: 0; /* Remove margin to align with the left text */
+}
+
+/* Scoped styles for Section 2 paragraphs */
+#section2 .right p {
+    font-size: 3rem; /* Increase font size for the paragraph */
+    max-width: 90%; /* Keep the paragraph narrower for better readability */
+    line-height: 1.7; /* Better line spacing */
+    color: white; /* White text for the right side */
+    letter-spacing: -0.03em; /* Decrease letter spacing */
+    word-spacing: -0.03em; /* Decrease word spacing */
+}
+
+/* Optional: Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    #section2 {
+        padding-top: 15vh; /* Adjust padding for smaller screens */
+    }
+
+    #section2 .left h2 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    #section2 .right p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+#section3 {
+    background-color: #97acba;
+    color: black;
+}
+
+
+
+/* Section 4: Project Experience layout */
+#section4 {
+    text-align: center; /* Center align the heading */
+    padding: 20px; /* General padding for the section */
+    background-color: #ffffff; /* Background color */
+    min-height: 100vh;
+}
+
+.main-title {
+    font-size: 5rem; /* Increase the font size for the Project Experience heading */
+    margin: 0; /* Remove any default margin */
+    color: #000; /* Change the text color to black */
+    padding-top: 5vh; /* Add padding above the title */
+    padding-bottom: 30vh; /* Add padding below the title */
+}
+
+.projects-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space between project sections */
+    flex-wrap: wrap; /* Wrap if there is not enough space */
+}
+
+.project {
+    width: 30%; /* Each project takes up 30% of the width */
+    text-align: center; /* Center align project text */
+    padding: 10px; /* Padding for individual project sections */
+}
+
+.project img {
+    max-width: 100%; /* Ensure images fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.project-name {
+    font-size: 2rem; /* Font size for project names */
+    margin-bottom: 5px; /* Space below project names */
+    color: #000;
+}
+
+.github-link a {
+    font-size: 1.2rem; /* Font size for GitHub links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.github-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#section5 {
+  background-color: #967168;
+  color: black;
+}
